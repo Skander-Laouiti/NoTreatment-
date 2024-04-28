@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="798.0" prefWidth="1531.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles.listDonB">
+    <children>
+        <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="798.0" prefWidth="1514.0" stylesheets="@values/style.css">
+         <center>
+            <AnchorPane prefHeight="837.0" prefWidth="1514.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane layoutX="384.0" layoutY="152.0" prefHeight="409.0" prefWidth="987.0">
+                     <content>
+                        <GridPane fx:id="gridpane" prefHeight="390.0" prefWidth="985.0">
+                          <columnConstraints>
+
+                          </columnConstraints>
+                          <rowConstraints>
+
+                          </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+                  <VBox layoutX="-11.0" layoutY="-7.0" prefHeight="808.0" prefWidth="212.0" styleClass="sidebar" stylesheets="@styles/stylesheet.css">
+                     <children>
+                        <VBox prefHeight="810.0" prefWidth="212.0">
+                           <children>
+                              <AnchorPane prefHeight="789.0" prefWidth="230.0">
+                                 <children>
+                                    <Button layoutX="8.0" layoutY="185.0" mnemonicParsing="false" onAction="#orgB" prefHeight="46.0" prefWidth="194.0" style="-fx-background-color: black;" styleClass="pink-button" stylesheets="@styles/style.css" text="Organisations" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font></Button>
+                                    <ImageView fitHeight="109.0" fitWidth="131.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/lg.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button layoutX="8.0" layoutY="266.0" mnemonicParsing="false" onAction="#donB" prefHeight="46.0" prefWidth="194.0" styleClass="pink-button" stylesheets="@styles/style.css" text="Dons" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font></Button>
+                                    <Button layoutX="9.0" layoutY="349.0" mnemonicParsing="false" onAction="#front" prefHeight="46.0" prefWidth="194.0" style="-fx-background-color: #3ea4c7;" styleClass="pink-button" stylesheets="@styles/style.css" text="Front" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
